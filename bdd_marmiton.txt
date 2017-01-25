@@ -1,0 +1,25 @@
+#################################
+#            recette            #
+#################################
+#      titre       #  txt  # RE #
+#      Budget      #  int  # RE #
+#    temps_prep    #  int  # RE #
+#    difficultee   #  int  # RE #
+#    nb_personne   #  int  # RE #
+#       type       #  txt  # RE #
+#     origine      #  txt  #    #
+#    id_recette    #  int  # RE #
+#     recette      #  txt  # RE #
+#      photo       #  txt  #    #
+# proposition_repa #  txt  #    #
+#      auteur      #  txt  # RE #
+#     date_crea    #  date # RE #
+#################################
+
+#################################
+#           ingredient          #
+#################################
+#     id_recette   # int  # RE  #
+#     nom_ingre    # txt  # RE  #
+#       poid       # float# RE  #
+#################################
