@@ -1,0 +1,49 @@
+############################
+#            recette       #
+############################
+#      titre       #  txt  #
+#      Budget      #  int  #
+#    temps_prep    #  int  #
+#    difficultee   #  int  #
+#    nb_personne   #  int  #
+#       type       #  int  #
+#     origine      #  txt  #
+#    id_recette    #  int  #
+#     recette      #  txt  #
+#      photo       #  txt  #
+# proposition_repas#  txt  #
+#      auteur      #  txt  #
+#     date_crea    #  date #
+############################
+
+###########################
+#         ingredient      #
+###########################
+#     id_recette   # int  #
+#     nom_ingre    # txt  #
+#       poid       # float#
+#     unite_poid   # txt  #
+###########################
+
+###########################
+#          commentaire    #
+###########################
+#     id_recette   # int  #
+#    commentaire   # txt  #
+#     auteur_com   # txt  #
+###########################
+
+###########################
+#        regime_recette   #
+###########################
+#     id_recette   # int  #
+#     vegetarien   # bool #
+#     vegetalien   # bool #
+#      no_gluten   # bool #
+#      pregnent    # bool #
+#     no_lactose   # bool #
+#       no_porc    # bool #
+#       no_oil     # bool #
+#      no_arach    # bool #
+#      no_coque    # bool #
+###########################
