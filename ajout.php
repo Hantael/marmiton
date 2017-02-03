@@ -18,48 +18,36 @@
   </head>
   <?php include 'header.php'; ?>
   <body>
-    <?php
-      try
-      {
-        $bdd = new PDO('mysql:host=localhost;dbname=marmiton;charset=utf8', 'root', '');
-      }
-      catch(Exception $e)
-      {
-        die('Erreur : ' . $e->getMessage());
-      }
-    ?>
     <form method="post" action="traitement.php">
-      <h1><label>Titre de la recette : </label><input id="champ" type="text" required></h1>
+      <h1><label>Titre de la recette : </label><input id="champ" type="text" name="titre" required></h1> 
       <div id="recette">
         <div class="caracteristique">
           <label>Budget prévus : </label>
-            <select required>
-              <option>Bon marché</option>
-              <option>Moyen</option>
-              <option>Cher</option>
+            <select name="budget" required>
+              <option value="1">Bon marché</option>
+              <option value="2">Moyen</option>
+              <option value="3">Cher</option>
             </select>
           <br /><br />
-          <label>Temps de préparation : </label><input type="number" placeholder="minutes" min="0" required>
+          <label>Temps de préparation : </label><input type="number" placeholder="minutes" min="0" name="time_prep" required>
           <br /><br />
           <label>Difficultée : </label>
-            <select required>
-              <option>Facile</option>
-              <option>Moyen</option>
-              <option>Difficile</option>
+            <select name="diff" required>
+              <option value="1">Facile</option>
+              <option value="2">Moyen</option>
+              <option value="3">Difficile</option>
             </select>
           <br><br>
-          <label>Nombre de personnes : </label><input type="number" required>
+          <label>Nombre de personnes : </label><input type="number" name="nb_perso" required>
           <br><br>
           <label>Type de recette : </label>
-            <select required>
-              <option>Entrée</option>
-              <option>Plat principal</option>
-              <option>Dessert</option>
-              <option>Apéritif</option>
-              <option>Boisson</option>
+            <select name="type" required>
+              <option value="1">Entrée</option>
+              <option value="2">Plat principal</option>
+              <option value="3">Dessert</option>
+              <option value="4">Apéritif</option>
+              <option value="5">Boisson</option>
             </select>
-          <br><br>
-          <label>Origine de la recette : </label><input type="text">
           <br><br>
           <div id="champs" >
             <input type="text" name="ingredient[]" placeholder="ingredient" required/>
@@ -85,11 +73,11 @@
         <div class="caracteristique">
           <label>Mettez ici votre recette : </label>
           <br>
-          <textarea rows="30" cols="75" required></textarea>
+          <textarea rows="30" cols="75" name="recette" required></textarea>
         </div>
       </div>
       <div class="fin">
-        <label>Votre nom : </label><input type="text">
+        <label>Votre nom : </label><input type="text" name="nom" required>
         <button type="submit">Envoyer</button>        
       </div>
     </form>
