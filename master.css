@@ -16,10 +16,29 @@
   text-align: center;
 }
 
+input, select {
+  background: none;
+  text-decoration: none;
+}
+
 body {
-  background: url('background.png');
+  background: url('public/img/background.png');
 }
 
 h1 {
+  text-align: center;
+}
+
+#recette {
+  display: flex;
+}
+
+.caracteristique {
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 40%;
+}
+
+.fin {
   text-align: center;
 }
